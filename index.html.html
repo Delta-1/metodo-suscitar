@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Método Suscitar - Apresentação Interativa</title>
+    <!-- Carrega o Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos base para Dark Mode */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* gray-900 */
+        }
+        /* Esconder slides por padrão, serão mostrados via JS */
+        .slide {
+            display: none;
+            min-height: 450px; /* Garante que o container não encolha demais */
+        }
+        /* Estilização para o indicador de pilar */
+        .pill-indicator {
+            transition: background-color 0.3s, color 0.3s;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-accent': '#34d399', /* teal-400 */
+                        'secondary-accent': '#f472b6', /* pink-400 */
+                        'bg-dark-card': '#1f2937', /* gray-800 */
+                        'bg-dark-light': '#374151', /* gray-700 */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Principal (Tema Escuro) -->
+    <div class="max-w-4xl mx-auto bg-bg-dark-card text-gray-100 shadow-2xl rounded-xl my-6">
+
+        <!-- Header -->
+        <header class="bg-gray-900 p-6 md:p-10 text-center rounded-t-xl border-b border-primary-accent">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-2 tracking-tight text-primary-accent">
+                O Método Suscitar
+            </h1>
+            <p class="text-lg italic text-gray-400">
+                Olá Cupid! Um guia interativo criado para você sentir a música.
+            </p>
+        </header>
+
+        <!-- Corpo da Apresentação -->
+        <main class="p-6 md:p-10">
+
+            <!-- Indicador de Progresso (Pilares) -->
+            <div id="progress-indicator" class="flex justify-center space-x-2 md:space-x-4 mb-8">
+                <!-- Introdução -->
+                <div id="pill-0" class="pill-indicator bg-primary-accent text-gray-900 px-3 py-1 rounded-full text-sm font-semibold shadow-lg">Introdução</div>
+                <!-- Pilares (Escutar, Encontrar, Observar, Praticar) -->
+                <div id="pill-1" class="pill-indicator bg-bg-dark-light text-gray-400 px-3 py-1 rounded-full text-sm font-semibold">1. Escutar</div>
+                <div id="pill-2" class="pill-indicator bg-bg-dark-light text-gray-400 px-3 py-1 rounded-full text-sm font-semibold">2. Encontrar</div>
+                <div id="pill-3" class="pill-indicator bg-bg-dark-light text-gray-400 px-3 py-1 rounded-full text-sm font-semibold">3. Observar</div>
+                <div id="pill-4" class="pill-indicator bg-bg-dark-light text-gray-400 px-3 py-1 rounded-full text-sm font-semibold">4. Praticar</div>
+            </div>
+
+            <!-- SLIDE 0: INTRODUÇÃO E CONCEITO -->
+            <section id="slide-0" class="slide p-6 bg-bg-dark-light rounded-lg border-l-4 border-secondary-accent shadow-xl">
+                <h2 class="text-3xl font-bold text-secondary-accent mb-4">
+                    O Conceito e os 4 Pilares
+                </h2>
+                <p class="text-gray-300 mb-4">
+                    Estou registrando este documento para você. O método é meu e é chamado de **Suscitar**.
+                </p>
+                <p class="text-gray-200 mb-6 font-semibold border-b border-gray-600 pb-4">
+                    **Suscitar** significa: Produzir a aparição de algo ou alguém, Fazer nascer, fazer aparecer. (pesquisa rápida no Google ^^)
+                </p>
+
+                <p class="text-lg font-bold text-primary-accent mb-3 mt-6">
+                    Meu método possui 4 principais pilares:
+                </p>
+                <ul class="space-y-2 text-xl font-extrabold text-gray-100">
+                    <li>Escutar</li>
+                    <li>Encontrar</li>
+                    <li>Observar</li>
+                    <li>Praticar</li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 1: ESCUTAR -->
+            <section id="slide-1" class="slide p-6 bg-bg-dark-light rounded-lg border-l-4 border-primary-accent shadow-xl">
+                <h2 class="text-3xl font-bold text-primary-accent mb-4">
+                    1. Escutar
+                </h2>
+                
+                <p class="text-gray-300 mb-4">
+                    Procure por uma música que você queira aprender. Ok, escolheu? **Escute essa música 3 vezes**.
+                </p>
+
+                <div class="bg-gray-700 p-4 rounded-lg shadow-inner mb-6">
+                    <h3 class="font-semibold text-lg text-secondary-accent mb-2">O Foco ao Escutar:</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300 ml-4">
+                        <li>Perceber o **andamento** da música (rítmica dos graves/bateria).</li>
+                        <li>Identificar seus **picos** (modulação de graves e agudos - Mão Direita).</li>
+                        <li>Entender **Padrões/repetições** (experimente cantarolar).</li>
+                    </ul>
+                </div>
+
+                <div class="p-3 my-4 bg-yellow-900 border-l-4 border-yellow-500 text-yellow-300 rounded-md font-medium">
+                    # Lembre-se que você **não precisa saber de teoria musical** para isso!
+                </div>
+            </section>
+
+            <!-- SLIDE 2: ENCONTRAR -->
+            <section id="slide-2" class="slide p-6 bg-bg-dark-light rounded-lg border-l-4 border-primary-accent shadow-xl">
+                <h2 class="text-3xl font-bold text-primary-accent mb-4">
+                    2. Encontrar
+                </h2>
+                
+                <p class="text-gray-300 mb-4">
+                    É aqui que você irá **usar suas mãos**! hihi. Você irá tentar encontrar as notas, o que será mais tranquilo, pois aplicou o primeiro Pilar.
+                </p>
+
+                <div class="p-3 my-4 bg-red-900 border-l-4 border-red-500 text-red-300 rounded-md font-medium">
+                    # É válido ressaltar que **todos os pilares dependem um do outro**!
+                </div>
+
+                <h4 class="font-semibold text-xl text-secondary-accent mt-6 mb-2">Passo 1: Identificar o Baixo (Mão Esquerda)</h4>
+                <p class="text-gray-300 mb-4">
+                    O **Bass (mão esquerda)** é a base. Tente identificar o baixo da música. Toque todas as notas do teclado até achar a nota certa. Encontrando o padrão, **repita o baixo umas 4 vezes** para fixar.
+                </p>
+
+                <h4 class="font-semibold text-xl text-secondary-accent mt-6 mb-2">Passo 2: Encontrar a Melodia (Mão Direita)</h4>
+                <p class="text-gray-300">
+                    Com base no baixo, foque em encontrar as notas da mão direita. Priorize a **parte tema da música** (repetições) para sentir a evolução e impressionar as pessoas hihi.
+                </p>
+            </section>
+
+            <!-- SLIDE 3: OBSERVAR -->
+            <section id="slide-3" class="slide p-6 bg-bg-dark-light rounded-lg border-l-4 border-primary-accent shadow-xl">
+                <h2 class="text-3xl font-bold text-primary-accent mb-4">
+                    3. Observar
+                </h2>
+                
+                <p class="text-gray-300 mb-4">
+                    Pesquise alguém que já tocou a música (vídeos tutoriais). A linha de pensamento é: **não foque em aprender com eles, foque em copiá-los** temporariamente.
+                </p>
+                <p class="text-gray-300 mb-4">
+                    Copie a habilidade da outra pessoa para desenvolver mais rápido. Observe a **formação e o modelo de posicionamento** que ela usa nas teclas para você adaptar.
+                </p>
+                
+                <div class="p-3 my-4 bg-green-900 border-l-4 border-green-500 text-green-300 rounded-md font-medium">
+                    Mas lembre-se: Busque **criar seu próprio arranjo**, porque você é única! E você deve melhorar o método da outra pessoa para superá-la!
+                </div>
+            </section>
+
+            <!-- SLIDE 4: PRATICAR -->
+            <section id="slide-4" class="slide p-6 bg-bg-dark-light rounded-lg border-l-4 border-primary-accent shadow-xl">
+                <h2 class="text-3xl font-bold text-primary-accent mb-4">
+                    4. Praticar
+                </h2>
+                
+                <p class="text-gray-300 mb-4">
+                    Aqui você vai **replicar todos os Pilares**. Junte a Base encontrada com os Padrões da Música e **Tandamm!** Você tem sua música favorita pronta para tocar.
+                </p>
+                
+                <p class="text-gray-300 mb-6">
+                    Não se frustre se não conseguir tirar a música de primeira. Este método tem um foco bem grande no quesito **sentir a música**. Eu digo que a coisa mais bela da música é senti-la.
+                </p>
+
+                <!-- Citação Final (Atualizada com a autoria) -->
+                <div class="p-6 mt-8 bg-secondary-accent text-gray-900 rounded-xl shadow-lg text-center">
+                    <p class="text-lg italic mb-2 font-semibold">
+                        Se for possível, tente levar isso para a vida:
+                    </p>
+                    <p class="text-2xl font-black mb-4">
+                        Tudo tem um sentido e um significado por trás, mas o que importa é o que <span class="underline">Você</span> sente e interpreta! Seja Original.
+                    </p>
+                    <p class="text-sm font-medium opacity-80">
+                        — de Victor Souza
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Controles de Navegação -->
+            <div class="flex justify-between items-center mt-8">
+                <button id="prev-btn" class="px-6 py-2 bg-gray-700 text-gray-400 font-semibold rounded-lg shadow-md hover:bg-gray-600 transition duration-200 focus:outline-none" disabled>
+                    &#9664; Anterior
+                </button>
+                <span id="slide-counter" class="text-sm font-medium text-gray-400"></span>
+                <button id="next-btn" class="px-6 py-2 bg-primary-accent text-gray-900 font-semibold rounded-lg shadow-md hover:bg-teal-500 transition duration-200 focus:outline-none">
+                    Próximo &#9654;
+                </button>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Lógica JavaScript para a Apresentação -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const slideCounter = document.getElementById('slide-counter');
+
+        function updateProgressIndicator() {
+            // Remove active classes from all indicators
+            document.querySelectorAll('.pill-indicator').forEach(pill => {
+                pill.classList.remove('bg-primary-accent', 'text-gray-900');
+                pill.classList.add('bg-bg-dark-light', 'text-gray-400');
+            });
+
+            // Add active classes to the current indicator
+            const currentPill = document.getElementById(`pill-${currentSlide}`);
+            if (currentPill) {
+                currentPill.classList.add('bg-primary-accent', 'text-gray-900');
+                currentPill.classList.remove('bg-bg-dark-light', 'text-gray-400');
+            }
+        }
+
+        function showSlide(index) {
+            // Hide all slides
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+
+            // Show the current slide
+            if (slides[index]) {
+                slides[index].style.display = 'block';
+            }
+
+            // Update navigation buttons state
+            prevBtn.disabled = index === 0;
+            prevBtn.classList.toggle('opacity-50', index === 0);
+            prevBtn.classList.toggle('cursor-not-allowed', index === 0);
+
+            nextBtn.disabled = index === totalSlides - 1;
+            nextBtn.classList.toggle('opacity-50', index === totalSlides - 1);
+            nextBtn.classList.toggle('cursor-not-allowed', index === totalSlides - 1);
+            nextBtn.textContent = index === totalSlides - 1 ? 'Fim' : 'Próximo \u25ba';
+            
+            // Update counter text
+            slideCounter.textContent = `Slide ${index + 1} de ${totalSlides}`;
+            
+            updateProgressIndicator();
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        });
+
+        // Initialize the presentation
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
